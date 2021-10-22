@@ -1,0 +1,1 @@
+<p>Ini dari View!</p>
