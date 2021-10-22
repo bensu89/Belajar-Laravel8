@@ -1,8 +1,0 @@
-/* Set warna background dan teks untuk tag <h1> */
-
-h1 {
-    background-color: #beaa34;
-    color: #ffffff;
-    padding: 10px;
-    text-align: center;
-}
