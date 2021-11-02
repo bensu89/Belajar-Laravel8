@@ -1,0 +1,11 @@
+/* Set warna background dan teks untuk tag <h1> */
+
+$warna-background: #beaa34;
+$warna-text: #ffffff;
+
+h1 {
+    background-color: $warna-background;
+    color: $warna-text;
+    padding: 10px;
+    text-align: center;
+}
