@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\Mahasiswa;
 class MahasiswaController extends Controller
 {
     public function index()
@@ -25,7 +25,12 @@ class MahasiswaController extends Controller
             'jurusan'       => 'required',
             'alamat'        => '',
         ]);
-
-        dump($validateData);
+        $mahasiswa = new Mahasiswa();
+        $mahasiswa->nim = $validateData['nim'];
+        $mahasiswa->nama = $validateData['nama'];
+        $mahasiswa->jenis_kelamin = $validateData['jenis_kelamin'];
+        $mahasiswa->jurusan = $validateData['jurusan'];
+        $mahasiswa->alamat = $validateData['alamat'];
+        $mahasiswa->save();
     }
 }
